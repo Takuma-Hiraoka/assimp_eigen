@@ -12,6 +12,7 @@ namespace assimp_eigen {
   struct MeshData {
     std::vector<Eigen::Vector3d> vertices;
     std::vector<Eigen::Vector3d> normals;
+    std::vector<Eigen::Vector3i> triangles;
   };
 
   MeshData loadMesh(const std::string& meshPath);
